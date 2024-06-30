@@ -382,7 +382,7 @@ footer{
 /* Estilos generales para dispositivos móviles */
 @media (max-width: 768px) {
     body {
-        padding: 0 10px;
+        padding: 0;
     }
     .top-banner {
         font-size: 14px;
@@ -402,60 +402,7 @@ footer{
         gap: 10px;
     }
     .container-cart-products {
-        width: 100%;
-        right: 0;
-    }
-}
-
-/* Estilos específicos para iPads (vertical y horizontal) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    body {
-        padding: 0 20px;
-    }
-    .top-banner {
-        font-size: 16px;
-    }
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-    header h1 {
-        font-size: 32px;
-    }
-    .container-icon {
-        margin-top: 10px;
-    }
-    .container-items {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
-    .container-cart-products {
-        width: 90%;
-        right: 0;
-    }
-}
-
-/* Estilos generales para dispositivos grandes */
-@media (min-width: 1025px) {
-    body {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    .container-items {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-    .container-cart-products.visible-cart {
-        display: block; /* Asegura que se muestre el carrito cuando haya productos */
-    }
-    .container-cart-products {
-        position: absolute;
-        top: 50px;
-        right: 0;
-        background-color: #fff;
-        width: 400px;
-        z-index: 1000;  /* Aumenta el z-index para que se superponga a otros elementos */
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-        border-radius: 10px;
+        width: auto;
+        right: auto;
     }
 }

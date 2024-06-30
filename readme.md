@@ -34,13 +34,10 @@ README.md
 •	script.js: Archivo JavaScript que maneja la lógica de negocio y la interacción del usuario, como agregar/quitar productos del carrito, validar la información del formulario de compra, etc.
 •	data.json: Archivo JSON que almacena los datos de los productos disponibles en la tienda.
 
-Instrucciones de Instalación y Uso
+Uso
 
-1.	Clonar el Repositorio:
--- Agregar link a github ---
-2.	Abrir el Proyecto:
--- Abrir el archivo index.html en cualquier navegador web moderno.
-3.	Navegar por la Página:
+1.	Accede desde tu navegador de preferencia a: https://vganen.github.io/DeportivaStore/
+2.	Navegar por la Página:
 -- Explorar las listado de productos.
 -- Agregar productos al carrito.
 -- Probar la funcionalidad de compra (simulada).

@@ -1,0 +1,39 @@
+[
+    {
+      "title": "TOP",
+      "price": 1290,
+      "tallas": ["S", "M", "L", "XL"],
+      "image": "css/IMG/top2.jpg"
+    },
+    {
+      "title": "Calza",
+      "price": 2390,
+      "tallas": ["S", "M", "L", "XL"],
+      "image": "css/IMG/calza.jpg"
+    },
+    {
+      "title": "Short dri-fit",
+      "price": 2490,
+      "tallas": ["S", "M", "L", "XL"],
+      "image": "css/IMG/short.jpg"
+    },
+    {
+      "title": "Nike In-season Tr13",
+      "price": 4990,
+      "tallas": ["35", "36", "37", "38", "39", "40", "41"],
+      "image": "css/IMG/nikeinseasontr13.jpg.webp"
+    },
+    {
+      "title": "Nike Free Metcon 5",
+      "price": 6990,
+      "tallas": ["35", "36", "37", "38", "39", "40", "41"],
+      "image": "css/IMG/NikeFreeMaraton.jpg.webp"
+    },
+    {
+      "title": "Nike Zoom Bella 6",
+      "price": 5790,
+      "tallas": ["35", "36", "37", "38", "39", "40", "41"],
+      "image": "css/IMG/NikeZoomBella6.jpg.webp"
+    }
+  ]
+  

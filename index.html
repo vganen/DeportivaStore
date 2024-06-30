@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deportiva Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+<body>
+    <!-- Banner superior -->
+    <div class="top-banner">
+        <span class="material-symbols-outlined">
+            local_shipping
+            </span> ENVIO GRATIS A TODO EL PAIS / ENVIO EXPRESS $300 <span class="material-symbols-outlined">
+            local_shipping
+            </span>
+    </div>
+    <header>
+        <div class="header-title">
+            <h1>DEPORTIVA STORE</h1>
+        </div>
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-cart">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="icon-close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+            </div>
+        </div>
+    </header>
+    <div class="container-items">
+        <!-- Los productos se cargarán dinámicamente aquí -->
+    </div>
+    <div id="purchaseModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Detalles de la compra</h2>
+            <form id="purchaseForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="fechaNacimiento">Fecha de Nacimiento (DD/MM/YYYY):</label>
+            <input type="text" id="fechaNacimiento" name="fechaNacimiento" placeholder="DD/MM/YYYY" maxlength="10" required>
+    
+                <label for="CCnumber">Tarjeta de Crédito:</label>
+                <input type="text" id="CCnumber" name="CCnumber" required>
+    
+                <div class="inline-fields">
+                    <div class="field-wrapper">
+                        <label for="CCexp">Fecha de Vencimiento (MM/YY):</label>
+                        <input type="text" id="CCexp" name="CCexp" placeholder="MM/YY" maxlength="5" required>
+                    </div>
+                    <div class="field-wrapper">
+                        <label for="CVC">Código de Seguridad:</label>
+                        <input type="text" id="CVC" name="CVC" maxlength="3" required>
+                    </div>
+                </div>
+                <button type="button" id="finalizarCompra">Finalizar Compra</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</body>
+<footer>&copy; Copyright 2024 Deportiva Store</footer>
+</html>
